@@ -1,0 +1,32 @@
+.items {
+    position: relative;
+    height: 70vh;
+}
+
+.item {
+    display: none;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.item.active {
+    display: block;
+}
+
+.prev {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+}
+
+.next {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+}
