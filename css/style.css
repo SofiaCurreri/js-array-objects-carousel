@@ -1,5 +1,4 @@
 .items {
-    position: relative;
     height: 70vh;
 }
 
@@ -19,14 +18,23 @@
     display: block;
 }
 
+.slider {
+    position: relative;
+}
+
+.prev,
+.next {
+    top: 50%;
+    color: white;
+    font-size: 2rem;
+}
+
 .prev {
     position: absolute;
     left: 1rem;
-    top: 50%;
 }
 
 .next {
     position: absolute;
     right: 1rem;
-    top: 50%;
 }

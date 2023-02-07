@@ -62,13 +62,12 @@ const images = [
 ];
 
 const slidesContainer = document.querySelector(".items");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
 let activeImg = 0;
 for (let i = 0; i < images.length; i++) {
     const currentImg = images[i].image;
     let classesImg = "item ";
-    console.log(i);
-    console.log(currentImg);
-    console.log("***********");
 
     if (i == activeImg) {
         classesImg += " active ";
@@ -81,3 +80,17 @@ for (let i = 0; i < images.length; i++) {
 
     slidesContainer.innerHTML += slide;
 }
+
+prevButton.addEventListener(
+    "click",
+    function () {
+
+    }
+);
+
+nextButton.addEventListener(
+    "click",
+    function () {
+
+    }
+);
