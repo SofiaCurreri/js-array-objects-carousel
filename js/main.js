@@ -65,7 +65,10 @@ const slidesContainer = document.querySelector(".items");
 let activeImg = 0;
 for (let i = 0; i < images.length; i++) {
     const currentImg = images[i].image;
-    const classesImg = "item ";
+    let classesImg = "item ";
+    console.log(i);
+    console.log(currentImg);
+    console.log("***********");
 
     if (i == activeImg) {
         classesImg += " active ";
