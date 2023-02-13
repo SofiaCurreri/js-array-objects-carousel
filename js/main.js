@@ -125,3 +125,23 @@ thumbsEl.forEach((thumb, index) => {
     switchtoSlide(thisIndex);
   });
 });
+
+//* AUTOPLAY
+let autoplayForward = true;
+const autoplay = setInterval(() => {
+  if (autoplayForward) {
+    nextClick();
+  } else {
+    prevClick();
+  }
+}, 3000);
+
+//* STOP AUTOPLAY
+stopAutoplayButton.addEventListener("click", () => {
+  clearInterval(autoplay);
+});
+
+//* INVERTIRE AUTOPLAY
+invertiAutoplayButton.addEventListener("click", () => {
+  autoplayForward = !autoplayForward;
+});
