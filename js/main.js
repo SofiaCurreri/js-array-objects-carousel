@@ -116,3 +116,12 @@ const prevClick = () => {
 
 nextButton.addEventListener("click", nextClick);
 prevButton.addEventListener("click", prevClick);
+
+//* CLICCANDO THUMBS CAMBIO IMG VISUALIZZATA
+const thumbsEl = document.querySelectorAll(".thumb");
+thumbsEl.forEach((thumb, index) => {
+  thumb.addEventListener("click", function () {
+    const thisIndex = this.getAttribute("data-index");
+    switchtoSlide(thisIndex);
+  });
+});
