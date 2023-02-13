@@ -7,12 +7,12 @@ img {
 .container {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .slider {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,6 @@ img {
 .main-slider {
   height: 80vh;
   width: 90vh;
-  margin-bottom: 15px;
 }
 
 .slide {
@@ -64,4 +63,17 @@ img {
 
 .thumb:last-child {
   border-bottom: 1px solid black;
+}
+
+.slider-controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 150px;
+}
+
+.slider-controls span {
+  cursor: pointer;
 }
